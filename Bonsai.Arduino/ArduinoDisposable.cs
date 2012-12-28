@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using System.Reactive.Disposables;
 
 namespace Bonsai.Arduino
 {
-    public sealed class ArduinoDisposable : IDisposable
+    public sealed class ArduinoDisposable : ICancelable, IDisposable
     {
-        int disposed;
-        IDisposable disposable;
+        IDisposable resource;
 
         public ArduinoDisposable(Arduino arduino, IDisposable disposable)
         {
@@ -24,19 +24,20 @@ namespace Bonsai.Arduino
             }
 
             Arduino = arduino;
-            this.disposable = disposable;
+            resource = disposable;
         }
 
         public Arduino Arduino { get; private set; }
 
         public bool IsDisposed
         {
-            get { return disposed == 1; }
+            get { return resource == null; }
         }
 
         public void Dispose()
         {
-            if (Interlocked.Exchange(ref disposed, 1) == 0)
+            var disposable = Interlocked.Exchange<IDisposable>(ref resource, null);
+            if (disposable != null)
             {
                 disposable.Dispose();
             }
