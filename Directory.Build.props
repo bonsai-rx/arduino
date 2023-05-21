@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <Authors>Gonçalo Lopes</Authors>
+    <Copyright>Copyright © Gonçalo Lopes 2011-2023</Copyright>
+    <PackageProjectUrl>https://bonsai-rx.org</PackageProjectUrl>
+    <PackageLicenseUrl>https://bonsai-rx.org/license</PackageLicenseUrl>
+    <PackageIconUrl>https://bonsai-rx.org/assets/images/bonsai.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/bonsai-rx/arduino.git</RepositoryUrl>
+    <PackageOutputPath>..\bin\$(Configuration)</PackageOutputPath>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <IncludeSymbols>true</IncludeSymbols>
+    <RepositoryType>git</RepositoryType>
+    <VersionSuffix></VersionSuffix>
+    <LangVersion>9.0</LangVersion>
+    <Features>strict</Features>
+  </PropertyGroup>
+</Project>

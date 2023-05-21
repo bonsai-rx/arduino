@@ -2,12 +2,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Title>Bonsai - Arduino Library</Title>
-    <Description>Bonsai Arduino Library containing communication infrastructure to probe and control the state of Arduino microcontrollers.</Description>
+    <Description>Bonsai Library containing reactive infrastructure to probe and control the state of Arduino microcontrollers.</Description>
     <PackageTags>Bonsai Rx Arduino</PackageTags>
     <TargetFramework>net462</TargetFramework>
     <VersionPrefix>2.6.0</VersionPrefix>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Bonsai.System\Bonsai.System.csproj" />
+    <PackageReference Include="Bonsai.System" Version="2.7.0" />
   </ItemGroup>
 </Project>
