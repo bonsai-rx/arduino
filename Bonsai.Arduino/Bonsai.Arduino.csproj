@@ -5,9 +5,9 @@
     <Description>Bonsai Library containing reactive infrastructure to probe and control the state of Arduino microcontrollers.</Description>
     <PackageTags>Bonsai Rx Arduino</PackageTags>
     <TargetFrameworks>net462;netstandard2.0</TargetFrameworks>
-    <VersionPrefix>2.8.0</VersionPrefix>
+    <VersionPrefix>2.8.1</VersionPrefix>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Bonsai.System\Bonsai.System.csproj" />
+    <PackageReference Include="Bonsai.System" Version="2.8.1" />
   </ItemGroup>
 </Project>

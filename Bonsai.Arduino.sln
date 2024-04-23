@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bonsai.Arduino", "Bonsai.Arduino\Bonsai.Arduino.csproj", "{0B3A017E-6D55-457A-AE97-439D3CD5F8C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B3A017E-6D55-457A-AE97-439D3CD5F8C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B3A017E-6D55-457A-AE97-439D3CD5F8C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B3A017E-6D55-457A-AE97-439D3CD5F8C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B3A017E-6D55-457A-AE97-439D3CD5F8C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C6A1830-C69D-4D66-A0CA-3136D9839B44}
+	EndGlobalSection
+EndGlobal
